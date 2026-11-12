@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\VisionController.cs~RF2a927ea.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NModbus" Version="3.0.83" />
+    <PackageReference Include="NModbus.Serial" Version="3.0.83" />
+    <PackageReference Include="OpenCvSharp4" Version="4.13.0.20260627" />
+    <PackageReference Include="OpenCvSharp4.Extensions" Version="4.13.0.20260627" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.13.0.20260627" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="halcondotnet">
+      <HintPath>..\..\..\MVTec\HALCON-24.11-Progress-Steady\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="hdevenginedotnet">
+      <HintPath>..\..\..\MVTec\HALCON-24.11-Progress-Steady\bin\dotnet35\hdevenginedotnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Docs\" />
+  </ItemGroup>
+
+</Project>

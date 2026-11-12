@@ -1,0 +1,40 @@
+# 构建产物
+bin/
+obj/
+*.user
+*.suo
+.vs/
+packages/
+*.nupkg
+
+# 日志与运行时数据
+VisionLogs/
+Logs/
+Images/
+*.log
+*.txt.tmp
+
+# 本地配置（可能含路径/端口等环境信息）
+vision_config.json
+appsettings.local.json
+
+# 配方（如果要公开示例，单独放一个 Recipes/Sample）
+Recipes/
+
+# HALCON 商业授权 / 本地 DLL（关键！）
+*.lic
+license.dat
+halcondotnet.dll
+halcon.dll
+hcanvas.dll
+hdvp.dll
+hdevengine*.dll
+halconxl*.dll
+
+# OpenCvSharp 如果是本地 DLL 而不是 NuGet
+opencv_videoio_ffmpeg*.dll
+OpenCvSharpExtern.dll
+
+# 系统
+Thumbs.db
+.DS_Store
